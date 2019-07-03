@@ -1,0 +1,165 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+    .header
+        height: auto
+        .header-flex
+            text-align: center
+            .img
+                padding: 0 0 15% 0
+
+    .article
+        .section
+            padding: 4% 
+
+    .scroll
+        display: none
+
+    h4
+        padding: 0 0 0 5%
+        margin: 0
+
+    .article
+        .section
+            &-print
+                .img-flowers
+                    top: 180px
+// ≥992px
++media-breakpoint-down(md)
+    h1
+        padding: 25px 0
+        font-size: 58px
+
+    .item
+        text-align: left
+
+    .section-about
+        display: flex
+        flex-flow: wrap
+        .item-one
+            order: 1
+        .item-two
+            order: 0
+
+    .blank
+        margin: 0 auto
+        width: 100% !important
+
+    .article
+        .section-faq
+            .form-wrapper
+                .p-form
+                    margin-left: 20%
+                img
+                    left: 0
+                    bottom: 0
+                form
+                    button
+                        margin-top: 20px
+        .section-contact
+            .item
+                text-align: center
+
+    .fotorama
+        margin: 10% 0 0 0
+
+    .menu-adaptive
+        span
+            display: block
+
+    .header
+        .nav
+            justify-content: space-between
+            padding: 71px 7%
+            .logo
+                font-size: 24px
+
+    
+
+    .article
+        .section
+            &-print
+                .img-flowers
+                    display: none
+                .img-sofa
+                    display: none
+
+    .menu
+        display: none
+
+
+// ≥768px
++media-breakpoint-down(sm)
+    .article 
+        .section-faq 
+            .form-wrapper 
+                img
+                    display: none
+                .p-form
+                    margin: 0
+                form
+                    text-align: center
+                    input
+                        margin: 0 auto
+                        margin: 0 15px
+
+
+// ≥576px
++media-breakpoint-down(xs)
+    .header 
+        .header-flex 
+            .img
+                width: 70%
+            .item
+                text-align: center
+                h1
+                    font-size: 8vw
+                p
+                    font-size: 26px
+                    padding: 0
+                h4
+                    padding: 25px 0 0 0
+
+    .article 
+        .section
+            .item
+                h3
+                    text-align: left
+                    font-size: 22px
+                .blank
+                    display: none
+            &-form 
+                .p-form
+                    text-align: center
+                form 
+                    text-align: center
+                    button
+                        margin: 15px 0 0 0
+            &-review
+                .reviews-flex
+                    img
+                        display: none
+
+    .footer
+        .footer-wrapper
+            p
+                font-size: 6px
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

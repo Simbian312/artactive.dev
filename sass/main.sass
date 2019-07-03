@@ -1,0 +1,371 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #868995
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*
+	box-sizing: border-box
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+a
+	color: $text
+	text-decoration: none
+	transition: color .2s ease
+	&:hover
+		color: $accent
+		text-decoration: none
+
+p
+	letter-spacing: 0.9
+
+h1
+	font-family: MullerExtraBold
+	font-size: 4.5vw
+	letter-spacing: 1.76px
+	text-transform: uppercase
+	line-height: 80px
+
+h4
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	padding: 15px 0 0 0
+
+ul
+	li
+		display: inline-block
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.button
+	width: 247px
+	height: 48px
+	border-radius: 24px
+	background-color: $accent
+	color: $text
+	font-family: $default-font
+	font-size: 16px
+	text-transform: uppercase
+	letter-spacing: 0.57px
+	border: 0
+	cursor: pointer
+
+.header
+	position: relative
+	height: 100vh
+	.nav
+		display: flex
+		justify-content: space-around
+		align-items: center
+		max-width: 1170px
+		margin: 0 auto
+		padding: 71px 0
+		.logo
+			text-transform: uppercase
+			font-family: opensansextrabold
+			font-size: 18px
+			margin: 0
+		ul
+			margin: 0
+			li
+				letter-spacing: 0.65
+				text-align: right
+				text-transform: uppercase
+				padding: 0 25px 0 0
+				font-size: 13px
+				font-family: opensanssemibold
+		.tel
+			margin: 0
+			font-size: 16px
+			font-family: $default-font
+			text-transform: uppercase
+			letter-spacing: 0.8px
+		button
+			width: 165px
+			height: 34px
+			font-family: opensansextrabold
+			color: $text
+			text-transform: uppercase
+			font-size: 11px
+			letter-spacing: 0.55px
+			border-radius: 17px
+			border: 2px solid #ffffff
+			background-color: transparent
+			transition: all .2s ease
+			cursor: pointer
+			&:hover
+				border: 2px solid $accent
+				color: $accent
+	.header-flex
+		padding: 3% 0
+		max-width: 1170px
+		margin: 0 auto
+		.img
+			width: 100%
+			height: auto
+			transform: scale(1.2)
+		.item
+			p
+				font-family: MullerMedium
+				font-size: 24px
+				line-height: 44px
+				padding: 50px 0 60px 0
+			ul
+				padding: 0
+				margin: 0
+	.scroll
+		width: 32px
+		height: auto
+		position: absolute
+		bottom: 40px
+		left: 49%
+		opacity: 0.4
+
+.menu-adaptive
+	span
+		display: none
+		width: 32px
+		height: 8px
+		border-bottom: 3px solid white
+		&:hover
+			border-bottom: 3px solid $accent
+		
+.article
+	.section
+		padding: 4% 0
+		max-width: 1170px
+		margin: 0 auto
+		h2
+				font-family: MullerBold
+				color: #7f38bd
+				font-size: 30px
+				padding: 0 0 7% 0
+		.item
+			h2
+				font-family: MullerBold
+				color: #7f38bd
+				font-size: 30px
+				padding: 0 0 3% 0
+			h3
+				font-family: MullerMedium
+				font-size: 32px
+				font-weight: 400
+				padding: 6% 0
+				color: #383d52
+			p
+				font-size: 14px
+				font-family: $default-font
+				line-height: 24px
+				color: #5e606a
+			ul
+				padding: 0 0 10% 20px
+				li
+					font-family: $default-font
+					font-size: 14px
+					font-weight: 400
+					line-height: 24px
+					color: #5e606a
+					display: list-item
+			.blank
+				background-color: #883eca
+				border-radius: 10px
+				box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33)
+				width: 90%
+				.button
+					width: 171px
+				ul
+					display: flex
+					justify-content: space-around
+					padding: 5%
+					&:first-child
+						font-size: 13px
+						font-family: $default-font
+						font-style: italic
+						line-height: 24px
+					li
+						color: #fff
+						list-style-type: none
+		.img
+			width: 100%
+			height: auto
+		&-print
+			.img-flowers
+				position: absolute
+				transform: scale(1.2)
+				top: 105px
+				left: -110px
+			.img-sofa
+				padding: 50px 0 0 0 
+			.button
+				margin: 5% 0 0 0
+		&-form
+			.p-form
+				color: #383d52
+				font-family: opensanssemibold
+				font-weight: 400
+				margin: 0
+				&:first-child
+					font-size: 13px
+					font-family: $default-font
+					font-style: italic
+					line-height: 24px
+			form
+				padding: 1% 0 0 0
+				input
+					font-style: italic
+					font-size: 14px
+					padding: 10px 10px
+					margin: 0 39px 0 0
+					border: 0
+					border-bottom: 1px solid #ccc
+				button
+					margin-left: 10px
+					width: 195px
+		&-review
+			.reviews
+				color: #383d52
+				&-flex
+					display: flex
+					justify-content: center
+					align-items: center
+					padding: 0 1%
+					img
+						transform: scale(1)
+					.review-item
+						padding: 0 5%
+						h4
+							font-size: 16px
+							font-weight: 400
+							font-family: opensanssemibold
+							padding: 0
+						a
+							color: #383d52
+		&-faq
+			h2
+				padding: 0 0 1% 0
+			.item
+				h3
+					font-size: 20px
+					font-weight: 400
+					margin: 0
+					padding: 3% 0 2% 0
+			.form-wrapper
+				background-color: #883eca
+				background-image: linear-gradient(to right, #a044ff 0%, #6a3093 100%)
+				color: #fff
+				padding: 4% 
+				margin-top: 70px
+				border-radius: 10px
+				box-shadow: 0 23px 32px rgba(81, 8, 86, 0.33)
+				position: relative
+				img
+					position: absolute
+					color: #ffffff
+					font-size: 68px
+					font-weight: 400
+					font-family: MullerBold
+					left: 80px
+					bottom: 0
+					overflow: hidden
+				.p-form
+					font-family: opensanssemibold
+					font-weight: 400
+					margin: 0
+					text-align: center
+					&:first-child
+						font-size: 13px
+						font-family: $default-font
+						font-style: italic
+						line-height: 24px
+				form
+					padding: 1% 0 0 0
+					text-align: right
+					input
+						font-style: italic
+						font-size: 14px
+						padding: 10px 10px
+						margin: 0 39px 0 0
+						border: 0
+						color: #fff
+						background-color: transparent
+						border-bottom: 1px solid #fff
+					button
+						margin-left: 10px
+						width: 192px
+					::placeholder
+						color: #fff
+		&-contact
+			.item
+				background-color: #fff
+				box-shadow: 0 23px 32px rgba(0, 0, 0, 0.16)
+				border-radius: 10px
+				padding: 15% 10% 15% 12%
+				margin: 20% 0
+				h2
+					font-family: MullerBold
+					color: #7f38bd
+					font-size: 30px
+					padding: 0 0 5% 0
+					font-weight: 400
+				p
+					font-size: 14px
+					font-family: $default-font
+					line-height: 24px
+					color: #5e606a
+					.fas
+						width: 32px
+						height: 24px
+						color: #883eca
+
+.footer
+	background-color: #65269d
+	.footer-wrapper
+		display: flex
+		justify-content: space-around
+		p
+			margin: 0
+			padding: 5px 0
+			opacity: 0.7
+			font-size: 13px
+			font-weight: 400
+
+.fotorama
+	margin: 24% 0 0 0
+	&__stage
+		border-radius: 10px
+		box-shadow: 0 5px 16px rgba(81, 8, 86, 0.33)
+
+
+@import "media" // Always at the end
